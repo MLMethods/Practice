@@ -23,20 +23,30 @@
 2. [Numpy](notebooks/C2_Numpy.ipynb)
 3. [Matplotlib](notebooks/C2_Matplotlib.ipynb)
 4. [Pandas](notebooks/C2_Pandas.ipynb)
-5. [Градиентный спуск](notebooks/C3_GD.ipynb)
-6. [Стохастический градиентный спуск](notebooks/C3_SGD.ipynb)
-7. Статистика
+5. Статистика
     - [Общие понятия](notebooks/C4_Distributions.ipynb)
     - [Законы распределения](notebooks/C4_Distributions.ipynb)
     - [Корреляция](notebooks/C4_Correlation.ipynb)
     - [Дополнительный пример](notebooks/C4_Statistics_Examples.ipynb)
-8. [Регрессия](notebooks/C5_Regression.ipynb)
-9. [Классификация](notebooks/C5_Classification.ipynb)
+6. Градиентный спуск
+    - [Градиентный спуск](notebooks/C3_GD.ipynb)
+    - [Стохастический градиентный спуск](notebooks/C3_SGD.ipynb)
+8. Регрессия
+    - [Обучение линейной регрессии: МНК, ГС, СГС](notebooks/C3_Linear_Regression.ipynb)
+    - [Линейная и полиномиальная регрессия](notebooks.C5_Polynomial_Regression.ipynb)
+    - [Регрессия](notebooks/C5_Regression.ipynb)
+9. Классификация
+    - [Логистическая регрессия](notebooks/C5_Logistic_Regression.ipynb.ipynb)
+    - [Классификация](notebooks/C5_Classification.ipynb)
 10. [Деревья решений](notebooks/C5_DT.ipynb)
 11. [Метрики качества](notebooks/C6_Metrics.ipynb)
+12. [Выбор модели](notebooks/C6_CV.ipynb)
+12. [Выбор признаков](notebooks/C7_Feature_Selection.ipynb)
 12. [Классификация текстов](notebooks/C7_Text_Classification.ipynb)
 13. Кластеризация
     - [Основные методы](notebooks/C8_Clustering.ipynb)
     - [Определение количества кластеров](notebooks/C8_Number_of_Clusters.ipynb)
 14. [Метод главных компонент и уменьшение размерности](notebooks/C8_PCA.ipynb)
 15. [Тематическое моделирование](notebooks/C9_Topic_Modeling.ipynb)
+
+
