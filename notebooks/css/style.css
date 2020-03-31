@@ -1,0 +1,70 @@
+.msg-block {
+  padding: 10px;
+}
+.msg-warning {
+  background-color: lightyellow;
+  border: 1px solid orange;
+  border-left: 10px solid orange;
+}
+.msg-info {
+  background-color: #e6f2ff;
+  border: 1px solid #0099ff;
+  border-left: 10px solid #0099ff;
+}
+.msg-text-warn {
+
+}
+.msg-text-warn:before {
+  content: "предупреждение!\A";
+  text-transform: uppercase;
+  font-weight: bold;
+  color: darkorange;
+  white-space: pre;
+}
+.msg-text-info {
+
+}
+.msg-text-info:before {
+  content: "замечание!\A";
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #007acc;
+  white-space: pre;
+}
+.msg-imp {
+  background-color: #ffe6e6;
+  border: 1px solid red;
+  border-left: 10px solid red;
+}
+.msg-text-imp {
+
+}
+.msg-text-imp:before {
+  content: "внимание!\A";
+  text-transform: uppercase;
+  font-weight: bold;
+  color: darkred;
+  margin-bottom: 15px;
+  white-space: pre;
+
+}
+.code-font, .bold, .code-key {
+  font-family: monospace;
+}
+.code-key {
+  color: green;
+  font-weight: bold;
+}
+.code-text-key {
+  color: #007a99;
+  font-weight: bold;
+}
+
+.code-block {
+  margin-left: 20px;
+  padding: 10px;
+  border-left: 2px solid lightgrey;
+}
+.bold {
+  font-weight: bold;
+}
