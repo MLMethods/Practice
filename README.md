@@ -37,7 +37,7 @@
     - [Регрессия](notebooks/C5_Regression.ipynb)
 9. Классификация
     - [Логистическая регрессия](notebooks/C5_Logistic_Regression.ipynb.ipynb)
-    - [Классификация с несбалансированной выборкой](notebooks/C5_Imbalanced_Classification.ipynb.ipynb)
+    - [Классификация с несбалансированной выборкой](notebooks/C5_Imbalanced_Classification.ipynb)
     - [Классификация](notebooks/C5_Classification.ipynb)
 10. [Деревья решений](notebooks/C5_DT.ipynb)
 11. [Метрики качества](notebooks/C6_Metrics.ipynb)
