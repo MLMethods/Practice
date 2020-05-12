@@ -39,7 +39,9 @@
     - [Логистическая регрессия](notebooks/C5_Logistic_Regression.ipynb.ipynb)
     - [Классификация с несбалансированной выборкой](notebooks/C5_Imbalanced_Classification.ipynb)
     - [Классификация](notebooks/C5_Classification.ipynb)
-10. [Деревья решений и их ансамбли](notebooks/C5_DT.ipynb)
+10. Деревья решений и их ансамбли
+    - [Деревья решений и их ансамбли](notebooks/C5_DT.ipynb)
+    - [Пример с предсказанием покупок](notebooks/C5_DT_purchase.ipynb)
 11. [Метрики качества](notebooks/C6_Metrics.ipynb)
 12. [Выбор модели](notebooks/C6_CV.ipynb)
 12. [Выбор признаков](notebooks/C7_Feature_Selection.ipynb)
