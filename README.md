@@ -24,7 +24,7 @@
 3. [Matplotlib](notebooks/C2_Matplotlib.ipynb)
 4. [Pandas](notebooks/C2_Pandas.ipynb)
 5. Статистика
-    - [Общие понятия](notebooks/C4_Distributions.ipynb)
+    - [Общие понятия](notebooks/C4_Statistics.ipynb)
     - [Законы распределения](notebooks/C4_Distributions.ipynb)
     - [Корреляция](notebooks/C4_Correlation.ipynb)
     - [Дополнительный пример](notebooks/C4_Statistics_Examples.ipynb)
@@ -36,7 +36,7 @@
     - [Линейная и полиномиальная регрессия](notebooks/C5_Polynomial_Regression.ipynb)
     - [Регрессия](notebooks/C5_Regression.ipynb)
 9. Классификация
-    - [Логистическая регрессия](notebooks/C5_Logistic_Regression.ipynb.ipynb)
+    - [Логистическая регрессия](notebooks/C5_Logistic_Regression.ipynb)
     - [Классификация с несбалансированной выборкой](notebooks/C5_Imbalanced_Classification.ipynb)
     - [Классификация](notebooks/C5_Classification.ipynb)
 10. Деревья решений и их ансамбли
