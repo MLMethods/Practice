@@ -24,7 +24,7 @@
 3. [Matplotlib](notebooks/C2_Matplotlib.ipynb)
 4. [Pandas](notebooks/C2_Pandas.ipynb)
 5. Статистика
-    - [Общие понятия](notebooks/C4_Statistics.ipynb)
+    - [Общие понятия](https://nbviewer.jupyter.org/github/MLMethods/Practice/blob/master/notebooks/C4_Statistics.ipynb)
     - [Законы распределения](notebooks/C4_Distributions.ipynb)
     - [Корреляция](notebooks/C4_Correlation.ipynb)
     - [Дополнительный пример](notebooks/C4_Statistics_Examples.ipynb)
