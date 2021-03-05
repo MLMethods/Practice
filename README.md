@@ -33,6 +33,7 @@
     - [Стохастический градиентный спуск](notebooks/C3_SGD.ipynb)
 8. Регрессия
     - [Обучение линейной регрессии: МНК, ГС, СГС](notebooks/C3_Linear_Regression.ipynb)
+    - [Линейная регрессия и статистический вывод](notebooks/C3_Inference.ipynb)
     - [Линейная и полиномиальная регрессия](notebooks/C5_Polynomial_Regression.ipynb)
     - [Регрессия](notebooks/C5_Regression.ipynb)
 9. Классификация
