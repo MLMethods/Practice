@@ -112,10 +112,18 @@ def plot_two_tailed_outside_normal_distribution(xlim, value):
     
 def get_z_by_alpha_for_two_tailed(alpha):
     return stats.norm.ppf(alpha/2, loc=0, scale=1)
-    
+
+
+def get_t_by_alpha_for_two_tailed(alpha, df):
+    return stats.t.ppf(1 - alpha/2, df) 
+
 
 def get_pvalue_for_two_tails_norm(z):
     return 2 * (stats.norm.cdf(-abs(z), loc=0, scale=1))
+
+
+def get_pvalue_for_two_tails_tdistribtion(t, df):
+    return 2 * stats.t.cdf(-abs(t), df)
 
 
 def get_z(x, mu, se):
@@ -243,6 +251,52 @@ def plot_two_tailed_pvalue_for_norm(x_bar, mu=0, se=1, alpha=0.05, xlim=(-4,4)):
         
     plt.grid(True)
 
+
+def plot_two_tailed_pvalue_for_tdistribution(t, df, alpha=0.05, xlim=(-4,4)):
+
+    t_alpha_upper = get_t_by_alpha_for_two_tailed(alpha, df)
+    t_alpha_lower = -t_alpha_upper
+
+    t_upper = abs(t)
+    t_lower = -t_upper
+
+    x = np.linspace(xlim[0], xlim[1], 1000)
+    y = stats.norm.pdf(x, loc=0, scale=1)
+    pvalue = get_pvalue_for_two_tails_tdistribtion(t, df)
+
+    plt.title("t-Distribution")
+
+    zorder = 1
+    plt.plot(x, y, lw=2, color="green", zorder=zorder)
+    plt.xlim(xlim)
+
+    zorder += 1
+    plt.fill_between(x, 0, y, where=x<=t_lower, facecolor="red", alpha=0.5, zorder=zorder+1 if t_upper > t_alpha_upper else zorder)
+    plt.fill_between(x, 0, y, where=x>=t_upper, facecolor="red", alpha=0.5, zorder=zorder+1 if t_upper > t_alpha_upper else zorder)
+
+    plt.fill_between(x, 0, y, where=x<=t_alpha_lower, facecolor="green", alpha=1, zorder=zorder if t_upper > t_alpha_upper else zorder+1)
+    plt.fill_between(x, 0, y, where=x>=t_alpha_upper, facecolor="green", alpha=1, zorder=zorder if t_upper > t_alpha_upper else zorder+1)
+
+    zorder += 2
+    plt.axvline(t_alpha_lower, color="g", linestyle="--", zorder=zorder)
+    plt.axvline(t_alpha_upper, color="g", linestyle="--", zorder=zorder)
+    plt.axvline(t_lower, color="r", linestyle="--", zorder=zorder)
+    plt.axvline(t_upper, color="r", linestyle="--", zorder=zorder)
+
+    zorder += 1
+    plt.annotate("$t$", fontsize=14, xy=(t, 0), xycoords="data",
+                               xytext=(t, -0.08), zorder=zorder)
+
+    plt.annotate("$t_{\\alpha}$", fontsize=14, xy=(t_alpha_upper if t > 0 else t_alpha_lower, 0), xycoords="data",
+                               xytext=(t_alpha_upper if t > 0 else t_alpha_lower, -0.08), zorder=zorder)
+
+    zorder += 1
+    plt.annotate("$\\alpha={:0.2f}$".format(alpha), (0.67,0.9), fontsize=14, xycoords="axes fraction", zorder=zorder)
+    plt.annotate("p-value=${:0.4f}$".format(pvalue), (0.67,0.8), fontsize=14, xycoords="axes fraction", zorder=zorder)
+    plt.annotate("$t={:0.2f}$".format(t), (0.67,0.7), fontsize=14, xycoords="axes fraction", zorder=zorder)
+    plt.annotate("$t_{\\alpha}=%0.2f$"%(t_alpha_upper if t > 0 else t_alpha_lower), (0.67,0.6), fontsize=14, xycoords="axes fraction", zorder=zorder)
+
+    plt.grid(True)
 
 if __name__ == "__main__":
     pass
