@@ -35,7 +35,7 @@
     - [Обучение линейной регрессии: МНК, ГС, СГС](notebooks/C3_Linear_Regression.ipynb)
     - [Линейная регрессия и статистический вывод](notebooks/C3_Inference.ipynb)
     - [Линейная полиномиальная регрессия](notebooks/C5_Polynomial_Regression.ipynb)
-    - [Пример с расходом топлива](notebooks/C5_Polynomial_Regression.ipynb)
+    - [Пример с расходом топлива](notebooks/C5_Linear_Regression_Fuel_Consumption.ipynb)
     - [Регрессия](notebooks/C5_Regression.ipynb)
 9. Классификация
     - [Логистическая регрессия](notebooks/C5_Logistic_Regression.ipynb)
