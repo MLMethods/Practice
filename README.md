@@ -45,7 +45,9 @@
     - [Деревья решений и их ансамбли](notebooks/C5_DT.ipynb)
     - [Пример с предсказанием покупок](notebooks/C5_DT_Purchase.ipynb)
 11. [Метрики качества](notebooks/C6_Metrics.ipynb)
-12. [Выбор модели](notebooks/C6_CV.ipynb)
+12. Выбор модели
+    - [Оценка качества и выбор модели с использованием кросс-валидации](notebooks/C6_CV.ipynb)
+    - [Регуляризация и выбор модели](notebooks/C6_Regularization.ipynb)
 12. [Выбор признаков](notebooks/C7_Feature_Selection.ipynb)
 12. [Классификация текстов](notebooks/C7_Text_Classification.ipynb)
 13. Кластеризация
