@@ -72,7 +72,7 @@ class CPlot:
         plt.scatter(X_test[:,0], X_test[:,1], c=model.predict(X_test), s=20, cmap=cmap)
         plt.xlabel("X1")
         plt.ylabel("X2")
-        plt.xlim(x1_min, x1_max)s
+        plt.xlim(x1_min, x1_max)
         plt.ylim(x2_min, x2_max)    
         plt.legend(*scatter.legend_elements(), title="Class:")
         plt.grid(True)
