@@ -43,6 +43,7 @@
     - [Классификация](notebooks/C5_Classification.ipynb)
 10. Деревья решений и их ансамбли
     - [Деревья решений и их ансамбли](notebooks/C5_DT.ipynb)
+    - [Деревья решений для задачи регрессии](notebooks/C5_DT_Housing.ipynb)
     - [Пример с предсказанием покупок](notebooks/C5_DT_Purchase.ipynb)
 11. [Метрики качества](notebooks/C6_Metrics.ipynb)
 12. Выбор модели
