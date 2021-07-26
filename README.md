@@ -31,30 +31,31 @@
 6. Градиентный спуск
     - [Градиентный спуск](notebooks/C3_GD.ipynb)
     - [Стохастический градиентный спуск](notebooks/C3_SGD.ipynb)
-8. Регрессия
+7. Регрессия
     - [Обучение линейной регрессии: МНК, ГС, СГС](notebooks/C3_Linear_Regression.ipynb)
     - [Линейная регрессия и статистический вывод](notebooks/C3_Inference.ipynb)
     - [Линейная полиномиальная регрессия](notebooks/C5_Polynomial_Regression.ipynb)
     - [Пример с расходом топлива](notebooks/C5_Linear_Regression_Fuel_Consumption.ipynb)
     - [Регрессия](notebooks/C5_Regression.ipynb)
-9. Классификация
+8. Классификация
     - [Логистическая регрессия](notebooks/C5_Logistic_Regression.ipynb)
     - [Классификация с несбалансированной выборкой](notebooks/C5_Imbalanced_Classification.ipynb)
     - [Классификация](notebooks/C5_Classification.ipynb)
-10. Деревья решений и их ансамбли
+9. Деревья решений и их ансамбли
     - [Деревья решений и их ансамбли](notebooks/C5_DT.ipynb)
     - [Деревья решений для задачи регрессии](notebooks/C5_DT_Housing.ipynb)
     - [Пример с предсказанием покупок](notebooks/C5_DT_Purchase.ipynb)
-11. [Метрики качества](notebooks/C6_Metrics.ipynb)
-12. Выбор модели
+10. [Метрики качества](notebooks/C6_Metrics.ipynb)
+11. Выбор модели
     - [Оценка качества и выбор модели с использованием кросс-валидации](notebooks/C6_CV.ipynb)
     - [Регуляризация и выбор модели](notebooks/C6_Regularization.ipynb)
 12. [Выбор признаков](notebooks/C7_Feature_Selection.ipynb)
-12. [Классификация текстов](notebooks/C7_Text_Classification.ipynb)
-13. Кластеризация
+13. [Классификация текстов](notebooks/C7_Text_Classification.ipynb)
+14. [Нейронные сети](notebooks/C5_NN.ipynb)
+15. Кластеризация
     - [Основные методы](notebooks/C8_Clustering.ipynb)
     - [Определение количества кластеров](notebooks/C8_Number_of_Clusters.ipynb)
-14. [Метод главных компонент и уменьшение размерности](notebooks/C8_PCA.ipynb)
-15. [Тематическое моделирование](notebooks/C9_Topic_Modeling.ipynb)
+16. [Метод главных компонент и уменьшение размерности](notebooks/C8_PCA.ipynb)
+17. [Тематическое моделирование](notebooks/C9_Topic_Modeling.ipynb)
 
 
