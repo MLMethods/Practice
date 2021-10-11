@@ -1,6 +1,3 @@
-
-<div align=right><a href="README_EN.md">EN</a></div>
-
 # Семинары
 
 С.Ю. Папулин (papulin.study@yandex.ru)
@@ -16,6 +13,10 @@
     - sklearn
     - nltk
 - gensim: `pip install gensim`
+
+## Пререквизиты
+
+- [Основы программирования на Python](notebooks/C0_PyBasics.ipynb)
 
 ## Темы
 
