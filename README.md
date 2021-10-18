@@ -23,7 +23,9 @@
 1. [Введение](notebooks/C1_Intro.ipynb)
 2. [Numpy](notebooks/C2_Numpy.ipynb)
 3. [Matplotlib](notebooks/C2_Matplotlib.ipynb)
-4. [Pandas](notebooks/C2_Pandas.ipynb)
+4. Pandas
+    - [Основные команды](notebooks/C2_Pandas.ipynb)
+    - [Пример с общепитом](notebooks/C2_Pandas_Places.ipynb)
 5. Статистика
     - [Общие понятия](https://nbviewer.jupyter.org/github/MLMethods/Practice/blob/master/notebooks/C4_Statistics.ipynb)
     - [Законы распределения](notebooks/C4_Distributions.ipynb)
