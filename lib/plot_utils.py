@@ -18,7 +18,9 @@ class CPlot:
         plt.show()
 
     @staticmethod
-    def show_train_test_plots(model, X_train, y_train, X_test, y_test, title=None, cmap="tab10", proba=False):
+    def show_train_test_plots(model, X_train, y_train, X_test, y_test, 
+                              title=None, cmap="tab10", proba=False, 
+                              show_colorbar=True):
 
         step = 0.01
 
@@ -56,25 +58,33 @@ class CPlot:
         plt.subplot(1,2,1)
         plt.title("Train data")
         plt.contourf(xx, yy, Z, cmap=cmap, alpha=.5)
-        scatter = plt.scatter(X_train[:,0], X_train[:,1], c=y_train, s=80, cmap=cmap, alpha=0.5)
-        plt.scatter(X_train[:,0], X_train[:,1], c=model.predict(X_train), s=20, cmap=cmap)
+        scatter = plt.scatter(X_train[:,0], X_train[:,1], c=y_train, s=80, cmap=cmap, alpha=0.5, label="True")
+        plt.scatter(X_train[:,0], X_train[:,1], c=model.predict(X_train), s=20, cmap=cmap, label="Predicted")
+        if show_colorbar:
+            plt.colorbar()
         plt.xlabel("X1")
         plt.ylabel("X2")
         plt.xlim(x1_min, x1_max)
         plt.ylim(x2_min, x2_max)    
-        plt.legend(*scatter.legend_elements(), title="Class:")
+        # FIXME: legend_elements is not supported in matplotlib 3.0.3
+#         plt.legend(*scatter.legend_elements(), title="Class:")
+        plt.legend()
         plt.grid(True)
 
         plt.subplot(1,2,2)
         plt.title("Test data")
         plt.contourf(xx, yy, Z, cmap=cmap, alpha=.5)
-        scatter = plt.scatter(X_test[:,0], X_test[:,1], c=y_test, s=80, cmap=cmap, alpha=0.5)
-        plt.scatter(X_test[:,0], X_test[:,1], c=model.predict(X_test), s=20, cmap=cmap)
+        scatter = plt.scatter(X_test[:,0], X_test[:,1], c=y_test, s=80, cmap=cmap, alpha=0.5, label="True")
+        plt.scatter(X_test[:,0], X_test[:,1], c=model.predict(X_test), s=20, cmap=cmap, label="Predicted")
+        if show_colorbar:
+            plt.colorbar()
         plt.xlabel("X1")
         plt.ylabel("X2")
         plt.xlim(x1_min, x1_max)
         plt.ylim(x2_min, x2_max)    
-        plt.legend(*scatter.legend_elements(), title="Class:")
+        # FIXME: legend_elements is not supported in matplotlib 3.0.3
+#         plt.legend(*scatter.legend_elements(), title="Class:")
+        plt.legend()
         plt.grid(True)
 
         plt.show()
@@ -124,7 +134,7 @@ class CPlot:
         plt.ylabel("X2")
         plt.xlim(x1_min, x1_max)
         plt.ylim(x2_min, x2_max)                   
-        plt.legend(*scatter.legend_elements(), title="Class:")
+#         plt.legend(*scatter.legend_elements(), title="Class:")
         plt.grid(True)
 
         plt.show()
@@ -178,3 +188,6 @@ class RPlot:
         plt.grid(True)
 
         plt.show()
+
+
+show_cplots = CPlot.show_train_test_plots
