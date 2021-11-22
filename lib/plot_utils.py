@@ -14,7 +14,8 @@ class CPlot:
         plt.grid(True)
         plt.xlabel("X1")
         plt.ylabel("X2")
-        plt.legend(*scatter.legend_elements(), title="Class:")
+        # FIXME: version 0.20 
+        # plt.legend(*scatter.legend_elements(), title="Class:")
         plt.show()
 
     @staticmethod
@@ -191,3 +192,8 @@ class RPlot:
 
 
 show_cplots = CPlot.show_train_test_plots
+show_init_cplots = CPlot.show_init_data_plot
+show_prediction_cplots = CPlot.show_prediction_plot
+
+show_rplots = RPlot.show_train_test_plots
+show_init_rplots = RPlot.show_init_data_plot
