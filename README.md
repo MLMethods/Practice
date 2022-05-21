@@ -60,6 +60,7 @@
 13. Кластеризация
     - [Основные методы](notebooks/C8_Clustering.ipynb)
     - [Определение количества кластеров](notebooks/C8_Number_of_Clusters.ipynb)
+    - [Использование кластеризации при классификации данных](notebooks/C8_Preprocessing_And_SemiSupervised.ipynb)
 14. [Метод главных компонент и уменьшение размерности](notebooks/C8_PCA.ipynb)
 15. [Тематическое моделирование](notebooks/C9_Topic_Modeling.ipynb)
 
