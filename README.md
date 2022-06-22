@@ -45,6 +45,7 @@
 6. Классификация
     - [Логистическая регрессия](notebooks/C5_Logistic_Regression.ipynb)
     - [Классификация с несбалансированной выборкой](notebooks/C5_Imbalanced_Classification.ipynb)
+    - [Распознавание активности]()
     - [Классификация](notebooks/C5_Classification.ipynb)
 7. Деревья решений и их ансамбли
     - [Деревья решений и их ансамбли](notebooks/C5_DT.ipynb)
