@@ -13,6 +13,7 @@
     - sklearn
     - nltk
 - gensim: `pip install gensim`
+- tensorflow: `pip install tensorflow==2.5.0`
 
 ## Пререквизиты
 
