@@ -13,6 +13,9 @@ dependencies:
   - scipy
   - numpy
   - pandas
+  - geopandas
+  - rtree
+  - folium
   - pip:
     - gensim
     - tensorflow==2.5.0
