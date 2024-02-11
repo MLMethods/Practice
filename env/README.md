@@ -6,23 +6,23 @@
 
 Загрузите и установите дистрибутив `Anaconda` в  соответствии с ОС вашего хоста.
 
+⚠️ **Замечание.** Актуальная версия для курса `Anaconda 2022.10`
+
 ## Образ c Ubuntu под VirtualBox
 
-[Ссылка на образ](https://disk.yandex.ru/d/0Hd92rzNB0_IHg)
+[Ссылка на образ](https://drive.google.com/file/d/1yBX8ardKTMLdk6j-75wpXGdf9nFW1lfM/view)
 
-Образ в формате `.iso` и предназначен для установки под `VirtualBox`
+Образ на базе ОС Ubuntu предназначен для установки под `VirtualBox`
+
+⚠️ **Замечание.** Размер образа ~6,9ГБ
 
 Установленное ПО:
 
 - Ubuntu 18
 - Java (JDK) 8
-- **Anaconda3-2019.03** (python 3.7)
-- IntellJ 2020.2.1
-- Hadoop 3.1.2
-- Spark 2.4.6
-- Zookeeper 3.5.8
-- Kafka 2.5.1
-- Redis 6.0.7
+- **Anaconda3-2022.10** (python 3.9)
+- IntellJ 2023.3.1
+
 
 Пароль: `ubuntu`
 
@@ -31,6 +31,9 @@
 ```bash
 sudo adduser $USER vboxsf
 ```
+
+Основы работы в терминале под ОС Ubuntu можно найти [здесь](https://github.com/BigDataProcSystems/Practice/blob/master/common/docs/basic_shell_commands.md)
+
 
 ## Conda
 
