@@ -2,13 +2,13 @@
 
 ### Содержание
 
-- [Дистрибутив `Anaconda`](#Дистрибутив-`Anaconda`)
-- [Образ под `VirtualBox`](#Образ-под-`VirtualBox`)
+- [Дистрибутив Anaconda](#Дистрибутив-Anaconda)
+- [Образ под VirtualBox](#Образ-под-VirtualBox)
 - [Docker контейнер](#Docker-контейнер)
 - [Conda](#Conda)
 
 
-## Дистрибутив `Anaconda`
+## Дистрибутив Anaconda
 
 [Ссылка на репозиторий](https://repo.anaconda.com/archive/)
 
@@ -16,7 +16,7 @@
 
 ⚠️ **Замечание.** Актуальная версия для курса `Anaconda 2022.10`
 
-## Образ под `VirtualBox`
+## Образ под VirtualBox
 
 [Ссылка на образ](https://drive.google.com/file/d/1yBX8ardKTMLdk6j-75wpXGdf9nFW1lfM/view)
 
