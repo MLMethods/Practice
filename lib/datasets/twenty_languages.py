@@ -6,7 +6,7 @@ https://huggingface.co/datasets/papluca/language-identification
 from os import makedirs
 from os.path import exists, join
 
-from sklearn.datasets.base import RemoteFileMetadata, _fetch_remote
+from sklearn.datasets._base import RemoteFileMetadata, _fetch_remote
 from sklearn.datasets import get_data_home
 from sklearn.utils import Bunch
 
