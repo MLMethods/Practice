@@ -58,8 +58,8 @@
 10. [Выбор признаков](notebooks/C7_Feature_Selection.ipynb)
 11. [Классификация текстов](notebooks/C7_Text_Classification.ipynb)
 12. Нейронные сети
-- [Нейронные сети](notebooks/nn/C5_NN.ipynb)
-- [Векторное представление слов](notebooks/nn/C5_NN_Embedding.ipynb)
+    - [Нейронные сети](notebooks/nn/C5_NN.ipynb)
+    - [Векторное представление слов](notebooks/nn/C5_NN_Embedding.ipynb)
 13. Кластеризация
     - [Основные методы](notebooks/C8_Clustering.ipynb)
     - [Определение количества кластеров](notebooks/C8_Number_of_Clusters.ipynb)
