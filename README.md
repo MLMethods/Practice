@@ -5,15 +5,13 @@
 
 ## Средства разработки и библиотеки
 
-- [Anaconda Python 3.x](https://www.anaconda.com/distribution/):
-    - jupyter
-    - numpy
-    - scipy
-    - pandas
-    - sklearn
-    - nltk
+[Развертывание среды разработки](env/README.md)
+
+Дополнительно:
+- geopandas: `pip install geopandas==0.13.2`
+- folium: `pip install folium`
 - gensim: `pip install gensim`
-- tensorflow: `pip install tensorflow==2.5.0`
+- tensorflow: `pip install tensorflow==2.11.0`
 
 ## Пререквизиты
 
@@ -47,6 +45,7 @@
     - [Логистическая регрессия](notebooks/C5_Logistic_Regression.ipynb)
     - [Классификация с несбалансированной выборкой](notebooks/C5_Imbalanced_Classification.ipynb)
     - [Распознавание активности](notebooks/C5_HAR.ipynb)
+    - [Распознавание голосовых команд](notebooks/C7_Audio_Recognition.ipynb)
     - [Классификация](notebooks/C5_Classification.ipynb)
 7. Деревья решений и их ансамбли
     - [Деревья решений и их ансамбли](notebooks/C5_DT.ipynb)
@@ -58,7 +57,9 @@
     - [Регуляризация и выбор модели](notebooks/C6_Regularization.ipynb)
 10. [Выбор признаков](notebooks/C7_Feature_Selection.ipynb)
 11. [Классификация текстов](notebooks/C7_Text_Classification.ipynb)
-12. [Нейронные сети](notebooks/C5_NN.ipynb)
+12. Нейронные сети
+- [Нейронные сети](notebooks/nn/C5_NN.ipynb)
+- [Векторное представление слов](notebooks/nn/C5_NN_Embedding.ipynb)
 13. Кластеризация
     - [Основные методы](notebooks/C8_Clustering.ipynb)
     - [Определение количества кластеров](notebooks/C8_Number_of_Clusters.ipynb)

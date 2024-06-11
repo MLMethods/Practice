@@ -27,9 +27,8 @@
 Установленное ПО:
 
 - Ubuntu 18
-- Java (JDK) 8
 - **Anaconda3-2022.10** (python 3.9)
-- IntellJ 2023.3.1
+- PyCharm
 
 
 Пароль: `ubuntu`
