@@ -2,16 +2,28 @@
 
 set -e
 
-echo "Running entrypoint script..."
+ENV_FILE="/usr/local/env/practice.env"
 
-if [ ! -d /home/ubuntu/Repos/mlmethods/Practice ]; then
-    echo "Cloning Practice repository..."
-	git clone https://github.com/MLMethods/Practice /home/ubuntu/Repos/mlmethods/Practice
+if [ -f "$ENV_FILE" ]; then
+    set -o allexport
+    source "$ENV_FILE"
+    set +o allexport
 fi
 
-if [ ! -d /home/ubuntu/Repos/mlmethods/Assignments ]; then
-    echo "Cloning Assignments repository..."
-    git clone https://github.com/MLMethods/Assignments /home/ubuntu/Repos/mlmethods/Assignments
-fi
+# echo "Running entrypoint script..."
 
-jupyter notebook --ip='*' --notebook-dir /home/ubuntu/Repos --allow-root
+# if [[ ! -d "$PRACTICE_REPO" || ! -d "$ASSIGNMENTS_REPO" ]]; then
+#     echo "Set the path where repo will be created in .env"
+# fi
+
+# echo "Cloning Practice repository..."
+# git clone https://github.com/MLMethods/Practice "$PRACTICE_REPO"
+
+# echo "Cloning Assignments repository..."
+# git clone https://github.com/MLMethods/Assignments "$ASSIGNMENTS_REPO"
+
+source /opt/conda/etc/profile.d/conda.sh
+conda activate mlmethods
+
+jupyter notebook --ip='*' --notebook-dir "$BASE_DIR" --allow-root
+

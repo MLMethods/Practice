@@ -23,7 +23,7 @@ RUN set -x \
 
 # COPY ./Sources/Anaconda3-2022.10-Linux-x86_64.sh /usr/local/bin/
 
-RUN set -x \
+ RUN set -x \
     && wget ${ANACONDA_URL} -O anaconda.sh -q \
     && echo "${SHA256SUM} anaconda.sh" > shasum \
     && sha256sum --check --status shasum \
@@ -36,9 +36,27 @@ RUN set -x \
     && find /opt/conda/ -follow -type f -name '*.js.map' -delete \ 
     && /opt/conda/bin/conda clean -afy
 
+# Copy .env
+
+COPY --chmod=644 .env /usr/local/env/practice.env
+
 # Copy the entrypoint script
 
 COPY --chmod=500 entrypoint.sh /usr/local/bin/
+
+# Copy .yml with dependencies
+
+COPY mlmethods.yml /tmp/mlmethods.yml
+
+# Create conda and setup environment
+
+RUN conda env create -f /tmp/mlmethods.yml
+
+RUN echo "conda activate mlmethods" >> ~/.bashrc 
+
+RUN /bin/bash -c "source ~/.bashrc && conda activate mlmethods && pip install --upgrade typing_extensions"
+
+RUN /bin/bash -c "source ~/.bashrc && conda activate mlmethods && conda install jupyter"
 
 # Default command on start
 ENTRYPOINT ["/bin/bash", "/usr/local/bin/entrypoint.sh"]
