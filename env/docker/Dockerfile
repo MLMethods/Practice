@@ -46,11 +46,11 @@ COPY --chmod=500 entrypoint.sh /usr/local/bin/
 
 # Copy .yml with dependencies
 
-COPY mlmethods.yml /tmp/mlmethods.yml
+COPY mlmethods.yml /usr/local/etc/mlmethods.yml
 
 # Create conda and setup environment
 
-RUN conda env create -f /tmp/mlmethods.yml
+RUN conda env create -f /usr/local/etc/mlmethods.yml
 
 RUN echo "conda activate mlmethods" >> ~/.bashrc 
 

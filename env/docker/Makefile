@@ -1,9 +1,17 @@
 include .env
 export $(shell sed 's/=.*//' .env)
 
+fix-permissions:
+	@if ! groups | grep -q docker; then \
+		sudo usermod -aG docker $$USER; \
+	fi
+	@if [ -S /var/run/docker.sock ]; then \
+		sudo chmod 666 /var/run/docker.sock; \
+	fi
+
 # Commands
 
-build:
+build: fix-permissions
 	docker build --tag ml-student-image --file Dockerfile .
 
 run:
