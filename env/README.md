@@ -62,7 +62,7 @@ make pycharm
 
 ## Docker контейнер
 
-Для развертывания достаточно склонировать репозиторий на локальную машину и поставить Docker Engine, [как указано в инструкции.](https://docs.docker.com/engine/install/ubuntu).
+Для развертывания достаточно склонировать репозиторий на локальную машину и поставить Docker Engine, [как указано в инструкции.](https://docs.docker.com/engine/install/ubuntu). Также необходимо задать в [.env](https://github.com/MLMethods/Practice/tree/master/env/docker/.env) собственные пути.
 
 [Ссылка на репозиторий](https://github.com/MLMethods/Practice/tree/master)
 
