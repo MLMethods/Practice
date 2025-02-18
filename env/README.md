@@ -18,16 +18,16 @@
 
 ## Образ под VirtualBox
 
-[Ссылка на образ](https://drive.google.com/file/d/1yBX8ardKTMLdk6j-75wpXGdf9nFW1lfM/view)
+[Ссылка на образ]([https://drive.google.com/file/d/1yBX8ardKTMLdk6j-75wpXGdf9nFW1lfM/view](https://drive.google.com/file/d/1I4qOKj5vRLSvEqGcA1rrl4craqhP_jR8/view?usp=drive_link))
 
 Образ на базе ОС Ubuntu предназначен для установки под `VirtualBox`
 
-⚠️ **Замечание.** Размер образа ~6,9ГБ
+⚠️ **Замечание.** Размер образа ~8,9ГБ
 
 Установленное ПО:
 
 - Ubuntu 18
-- **Anaconda3-2022.10** (python 3.9)
+- **Anaconda3-2024.02** (python 3.12)
 - PyCharm
 
 
