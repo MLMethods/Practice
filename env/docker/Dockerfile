@@ -3,10 +3,10 @@ FROM debian:bullseye-slim
 LABEL maintainer="Sergei Papulin <papulin.study@yandex.ru>"
 
 ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
-ENV PATH /opt/conda/bin:$PATH
+ENV PATH=/opt/conda/bin:$PATH
 
-ARG SHA256SUM="e7ecbccbc197ebd7e1f211c59df2e37bc6959d081f2235d387e08c9026666acd"
-ARG ANACONDA_URL="https://repo.anaconda.com/archive/Anaconda3-2022.10-Linux-x86_64.sh"
+ARG SHA256SUM="c536ddb7b4ba738bddbd4e581b29308cb332fa12ae3fa2cd66814bd735dff231"
+ARG ANACONDA_URL="https://repo.anaconda.com/archive/Anaconda3-2024.02-1-Linux-x86_64.sh"
 
 # setup environment
 
@@ -16,12 +16,13 @@ RUN set -x \
         ca-certificates \
         git \
         wget \
+        graphviz \ 
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
 # setup anaconda
 
-# COPY ./Sources/Anaconda3-2022.10-Linux-x86_64.sh /usr/local/bin/
+# COPY ./Sources/Anaconda3-2024.02-1-Linux-x86_64.sh /usr/local/bin/
 
 RUN set -x \
     && wget ${ANACONDA_URL} -O anaconda.sh -q \
@@ -36,9 +37,13 @@ RUN set -x \
     && find /opt/conda/ -follow -type f -name '*.js.map' -delete \ 
     && /opt/conda/bin/conda clean -afy
 
-# Copy the entrypoint script
+# Copy python requirements and the entrypoint script
 
-COPY --chmod=500 entrypoint.sh /usr/local/bin/
+COPY --chmod=500 requirements.txt entrypoint.sh /usr/local/bin/
+
+RUN \
+    # Install python packages from the requirements file
+    python3 -m pip install --no-cache-dir -r /usr/local/bin/requirements.txt
 
 # Default command on start
 ENTRYPOINT ["/bin/bash", "/usr/local/bin/entrypoint.sh"]

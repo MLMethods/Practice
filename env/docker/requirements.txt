@@ -1,0 +1,8 @@
+ipywidgets==8.0.4   # prevent widget crash in notebook
+geopandas==0.13.2
+folium
+# tensorflow and related
+tensorflow-cpu==2.16.1
+pydot==3.0.4 
+# others
+gensim

@@ -17,5 +17,8 @@ sync:
 	docker exec ml-student bash -c "cd /home/ubuntu/Repos/mlmethods/Practice && git pull"
 	docker exec ml-student bash -c "cd /home/ubuntu/Repos/mlmethods/Assignments && git pull"
 
+exec: 
+	docker exec -it ml-student bash
+
 rm:
 	docker rm -f ml-student
