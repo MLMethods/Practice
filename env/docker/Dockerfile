@@ -35,7 +35,11 @@ RUN set -x \
     && echo "conda activate base" >> ~/.bashrc \ 
     && find /opt/conda/ -follow -type f -name '*.a' -delete \ 
     && find /opt/conda/ -follow -type f -name '*.js.map' -delete \ 
-    && /opt/conda/bin/conda clean -afy
+    && /opt/conda/bin/conda clean -afy \
+    && pip install geopandas==0.13.2 \
+    && pip install folium \
+    && pip install gensim \
+    && pip install tensorflow
 
 # Copy python requirements and the entrypoint script
 
