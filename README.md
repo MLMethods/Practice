@@ -11,7 +11,7 @@
 - geopandas: `pip install geopandas==0.13.2`
 - folium: `pip install folium`
 - gensim: `pip install gensim`
-- tensorflow: `pip install tensorflow==2.11.0`
+- tensorflow: `pip install tensorflow==2.16.1`
 
 ## Пререквизиты
 

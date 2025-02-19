@@ -18,7 +18,7 @@
 
 ## Образ под VirtualBox
 
-[Ссылка на образ](https://drive.google.com/file/d/1yBX8ardKTMLdk6j-75wpXGdf9nFW1lfM/view)
+[Ссылка на образ](https://drive.google.com/file/d/1p43yVot-I7xIwKwkz4DJnMfINMeK4Jj7/view)
 
 Образ на базе ОС Ubuntu предназначен для установки под `VirtualBox`
 
@@ -27,8 +27,8 @@
 Установленное ПО:
 
 - Ubuntu 18
-- **Anaconda3-2022.10** (python 3.9)
-- PyCharm
+- Anaconda3-2024.02 (python 3.12)
+- PyCharm 2024.1.7
 
 
 Пароль: `ubuntu`
