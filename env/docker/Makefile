@@ -1,7 +1,10 @@
 # Commands
 
+IMAGE := ml-student-image
+CONTAINTER := ml-student
+
 build:
-	docker build --tag ml-student-image --file Dockerfile .
+	docker build --tag $(IMAGE) --file Dockerfile .
 
 run:
 	docker run \
@@ -9,16 +12,19 @@ run:
     --interactive \
     --tty \
     --publish 8888:8888 \
-    --name ml-student \
+    --name $(CONTAINTER) \
     --volume ./Repos:/home/ubuntu/Repos \
-    ml-student-image
+    $(IMAGE)
 
 sync:
-	docker exec ml-student bash -c "cd /home/ubuntu/Repos/mlmethods/Practice && git pull"
-	docker exec ml-student bash -c "cd /home/ubuntu/Repos/mlmethods/Assignments && git pull"
+	docker exec $(CONTAINTER) bash -c "cd /home/ubuntu/Repos/mlmethods/Practice && git pull"
+	docker exec $(CONTAINTER) bash -c "cd /home/ubuntu/Repos/mlmethods/Assignments && git pull"
 
-exec: 
-	docker exec -it ml-student bash
+exec:
+	docker exec -it $(CONTAINTER) bash
 
 rm:
-	docker rm -f ml-student
+	docker rm -f $(CONTAINTER)
+
+rmi:
+	docker rmi -f $(IMAGE)
