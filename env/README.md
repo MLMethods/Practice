@@ -27,7 +27,7 @@
 Установленное ПО:
 
 - Ubuntu 18
-- Anaconda3-2024.02 (python 3.12)
+- Anaconda3-2024.02 (python 3.11)
 - PyCharm 2024.1.7
 
 
