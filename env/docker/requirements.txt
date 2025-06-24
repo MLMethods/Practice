@@ -1,8 +1,19 @@
+# Base
+scikit-learn==1.5.2 # fix tensorflow + transformers compatibility
 ipywidgets==8.0.4   # prevent widget crash in notebook
+ipympl==0.9.7       # fix widget matplotlib animation 
 geopandas==0.13.2
 folium
-# tensorflow and related
-tensorflow-cpu==2.16.1
+# Tensorflow and related
+tensorflow-cpu==2.19.0
+# keras==3.10.0
+tf_keras==2.19.0    # fix transformers + keras compatibility
+scikeras==0.13.0
 pydot==3.0.4 
-# others
+# Hugging face
+datasets==3.6.0
+transformers==4.49.0
+evaluate==0.4.3
+# Others
 gensim
+wordcloud==1.9.4
