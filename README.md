@@ -58,7 +58,7 @@
     - [Нейронные сети](notebooks/nn/C5_NN.ipynb)
     - [Векторное представление слов](notebooks/nn/C5_NN_Embedding.ipynb)
     - [Предобученные LLM](notebooks/nn/C5_NN_Pretrained.ipynb)
-    - [Промптинга DeepSeek Api](notebooks/nn/C5_NN_DeepSeekApi_Basics.ipynb)
+    - [Промптинг DeepSeek Api](notebooks/nn/C5_NN_DeepSeekApi_Basics.ipynb)
     - [Семантический поиск и RAG](notebooks/nn/C5_NN_RAG.ipynb)
 13. Кластеризация
     - [Основные методы](notebooks/C8_Clustering.ipynb)
