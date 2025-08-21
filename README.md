@@ -56,7 +56,9 @@
 11. [Классификация текстов](notebooks/C7_Text_Classification.ipynb)
 12. Нейронные сети
     - [Нейронные сети](notebooks/nn/C5_NN.ipynb)
+    - [Распознавания изображений](notebooks/nn/C5_NN_ImageRecognition.ipynb)
     - [Векторное представление слов](notebooks/nn/C5_NN_Embedding.ipynb)
+    - [Мультимодальные модели](notebooks/nn/C5_NN_Multimodal.ipynb)
     - [Предобученные LLM](notebooks/nn/C5_NN_Pretrained.ipynb)
     - [Промптинг DeepSeek Api](notebooks/nn/C5_NN_DeepSeekApi_Basics.ipynb)
     - [Семантический поиск и RAG](notebooks/nn/C5_NN_RAG.ipynb)
