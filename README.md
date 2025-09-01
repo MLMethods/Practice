@@ -59,6 +59,7 @@
     - [Распознавания изображений](notebooks/nn/C5_NN_ImageRecognition.ipynb)
     - [Векторное представление слов](notebooks/nn/C5_NN_Embedding.ipynb)
     - [Мультимодальные модели](notebooks/nn/C5_NN_Multimodal.ipynb)
+    - [Генерация изображений](notebooks/nn/C5_NN_ImageGenerator.ipynb)
     - [Предобученные LLM](notebooks/nn/C5_NN_Pretrained.ipynb)
     - [Промптинг DeepSeek Api](notebooks/nn/C5_NN_DeepSeekApi_Basics.ipynb)
     - [Семантический поиск и RAG](notebooks/nn/C5_NN_RAG.ipynb)
